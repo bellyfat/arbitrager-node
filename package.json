@@ -4,7 +4,7 @@
   "description": "Arbitrager Bot which uses Blockchainwallets to buffer the corresponding assets, then use Exchanges and the Bancor Network to do some arbitrage",
   "main": "index.js",
   "scripts": {
-    "build-js": "coffee -o . -c source/", 
+    "build-js": "coffee -o . -c source/",
     "watch-js": "coffee -o . -cw source/",
     "build": "npm run build-js",
     "watch": "npm-run-all watch-js nodemon index",
@@ -30,10 +30,5 @@
     "url": "https://github.com/JhonnyJason/arbitrager-node/issues"
   },
   "homepage": "https://github.com/JhonnyJason/arbitrager-node#readme",
-  "dependencies": {
-    "coffeescript": "^2.2.3",
-    "nodemon": "^1.17.2",
-    "npm-run-all": "^4.1.2",
-    "web3": "^1.0.0-beta.33"
-  }
+  "dependencies": {}
 }
