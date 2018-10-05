@@ -1,0 +1,39 @@
+{
+  "name": "arbitrager-node",
+  "version": "0.0.1",
+  "description": "Arbitrager Bot which uses Blockchainwallets to buffer the corresponding assets, then use Exchanges and the Bancor Network to do some arbitrage",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "coffee -o . -c source/", 
+    "watch-js": "coffee -o . -cw source/",
+    "build": "npm run build-js",
+    "watch": "npm-run-all watch-js nodemon index",
+    "test": "npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhonnyJason/arbitrager-node.git"
+  },
+  "keywords": [
+    "nodejs",
+    "bot",
+    "arbitrage",
+    "crypto",
+    "exchanges",
+    "bancor",
+    "web3",
+    "crossblockchain"
+  ],
+  "author": "Gordon Freeman",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/JhonnyJason/arbitrager-node/issues"
+  },
+  "homepage": "https://github.com/JhonnyJason/arbitrager-node#readme",
+  "dependencies": {
+    "coffeescript": "^2.2.3",
+    "nodemon": "^1.17.2",
+    "npm-run-all": "^4.1.2",
+    "web3": "^1.0.0-beta.33"
+  }
+}
